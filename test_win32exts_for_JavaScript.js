@@ -18,7 +18,7 @@ win32exts.load_sym("user32", "*")
 g_buf = win32exts.malloc( 2*260 )
 
 //
-// sample: call MessageBoxW
+// sample: call EnumWindows & MessageBoxW
 //
 var xx = 0;
 xx = win32exts.MessageBoxW(0, win32exts.L("start call MessageBoxW11"), null, 1);
