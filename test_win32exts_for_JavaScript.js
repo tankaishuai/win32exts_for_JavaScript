@@ -18,7 +18,7 @@ win32exts.load_sym("user32", "*")
 g_buf = win32exts.malloc( 2*260 )
 
 //
-// sample: call EnumWindows & MessageBoxW
+// sample: call MessageBoxW
 //
 var xx = 0;
 xx = win32exts.MessageBoxW(0, win32exts.L("start call MessageBoxW11"), null, 1);
@@ -31,7 +31,7 @@ strCurDll = win32exts.read_wstring(g_buf, 0, -1)
 win32exts.MessageBoxW(0, win32exts.L(strCurDll), null, 1);
 
 //
-// sample: call GetWindowTextW API
+// sample: call EnumWindows & GetWindowTextW API
 //
 iCount = 0;
 
